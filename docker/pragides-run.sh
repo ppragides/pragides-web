@@ -102,8 +102,8 @@ fi
 
 # NGINX container
 docker run -d \
-	-p 80:80 \
-	-p 443:443 \
+	-p 81:81 \
+	-p 444:444 \
 	--restart=always \
 	--net container:pragides-local \
 	-v $PROJECT_ROOT/$PRAGIDES_DIR/webroot/:/var/www/mcs/shaw-music/webroot \
@@ -114,9 +114,9 @@ docker run -d \
 
 # Consul DB container
 docker run -d \
-	-p 1440:1440
-	--name consul \
+	-p 1440:1440 \
 	--net container:pragides-local \
 	-e CONSUL_BIND_INTERFACE=eth0 \
+	--name consul \
 	consul:latest \
 	agent -dev -log-level=WARN -data-dir=/dev/shm -client=0.0.0.0
