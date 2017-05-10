@@ -1,0 +1,39 @@
+##
+# Limit Zone Definition
+##
+
+upstream nodeapplication {
+    server 127.0.0.1:1440               weight=1 fail_timeout=2s;
+}
+
+server {
+
+	listen 80;
+	listen 8080;
+	listen 443 ssl;
+	listen 8181 ssl;
+	listen 8191 ssl;
+	listen 8192 ssl;
+
+
+	server_name  pragides.ca;
+	root /var/www/pragides.ca/webroot;
+	index index.php;
+	access_log /var/log/nginx/pragides-access.log;
+	error_log /var/log/nginx/pragides-error.log;
+
+	add_header X-Frame-Options DENY;
+	add_header X-Content-Type-Options nosniff;
+
+	
+	# Include the Error Page
+	include /etc/nginx/conf.d/error-page.incl;
+
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	location ~ /\.ht {
+		deny  all;
+	}
+
+}
