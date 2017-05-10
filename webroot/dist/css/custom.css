@@ -1,0 +1,194 @@
+body {
+	background-image:url('/images/grassbackground.jpg') !important;
+	background-repeat: repeat !important;
+}
+
+.navbar {
+	background-color: #fff;
+}
+
+.navbar-brand {
+	margin-top: 5px;
+}
+
+.navbar-toggle {
+	background-color: #eeeeee !important;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #a1d490;
+}
+
+	.mainNavigationLink {
+		float: left;
+		font-family: arial;
+		color: #6e6e6e;
+		width: 100px;
+		height: 40;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	
+	.mainNavigationLink a {
+		line-height: 40px;
+	}
+	
+	.navContainer {
+		float: right;
+		padding-right: 10px;
+	}
+	
+	
+	.activeNav1 {
+		background-color: #91c1db;
+	}
+	
+	.activeNav2 {
+		background-color: #c390d4;
+	}
+	.activeNav3 {
+		background-color: #d4a190;
+	}
+	.activeNav4 {
+		background-color: #a1d490;
+	}
+	.activeNav5 {
+		background-color: #9690d4;
+	}
+	
+	.activeNav1 a 
+	,.activeNav2 a
+	,.activeNav3 a
+	,.activeNav4 a
+	,.activeNav5 a{
+		color: #fff;	
+	}
+	
+	
+	.nav1:hover {
+		background-color: #91c1db;
+	}
+	
+	.nav1:hover a {
+		color: #fff;
+	}
+	
+	.nav1 a {
+		border-bottom: 2px solid #91c1db;
+	}
+	
+	.nav2:hover {
+		background-color: #c390d4;
+		color: #fff;
+	}
+	
+	.nav2:hover a {
+		color: #fff;
+	}
+	
+	.nav2 a {
+		border-bottom: 2px solid #c390d4;
+	}
+	
+	
+	.nav3:hover {
+		background-color: #d4a190;
+		color: #fff;
+	}
+	
+	.nav3:hover a {
+		color: #fff;
+	}
+	
+	.nav3 a {
+		border-bottom: 2px solid #d4a190;
+	}
+	
+	.nav4:hover {
+		background-color: #a1d490;
+		color: #fff;
+	}
+	
+	.nav4:hover a {
+		color: #fff;
+	}
+	
+	.nav4 a {
+		border-bottom: 2px solid #a1d490;
+	}
+	
+	.nav5:hover {
+		background-color: #9690d4;
+		color: #fff;
+	}
+	
+	.nav5:hover a {
+		color: #fff;
+	}
+	
+	.nav5 a {
+		border-bottom: 2px solid #9690d4;
+		width: 100px;
+	}	
+	
+	
+/*
+ * 
+ * MAIN CONTENT
+ * 
+ */	
+
+
+.paddingContainer {
+	padding-top: 40px;
+}
+
+
+/*
+ * 
+ * FOOTER STYLES
+ * 
+ */
+.footer-container {
+	background-image:url('/images/dark_footer_bg.jpg');
+	background-repeat: repeat;	
+	width: 100%;
+}
+
+.footerBlock  h2 {
+	font-weight: normal;
+	font-size: 17px;
+	border-bottom: 1px solid #eeeeee;
+	/*color: #91c1db;*/
+}
+
+.footerBlock p {
+	font-size: 12px;	
+	color: #c7c7c7;
+}
+.footerBlock a,
+.footerText a {
+	color: #c7c7c7;
+}
+
+.footerBlock a:hover
+, .footerText a:hover {
+	color: #91c1db;
+}
+
+
+.articlesh1 {
+	color: #d4a190;
+}
+
+.reviewsh1 {
+	color : #c390d4;
+}
+
+.contacth1 {
+	color: #a1d490;
+}
